@@ -20,5 +20,9 @@ app.use("/api/empleados",empeladosRoutes)
 app.use("/api/clientes",clientesRoutes)
 app.use("/api/productos",productosRoutes)
 
+app.get('/',(req,res)=>{
+    res.send('REST API EN RENDER WITHOUTDATABSE ENNDPOINTS')
+})
+
 /* hacemos disponible a mi server app para toda la aplicacion */
 export default app;
